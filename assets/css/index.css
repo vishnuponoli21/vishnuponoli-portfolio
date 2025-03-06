@@ -319,11 +319,24 @@ header{
     }
     
     nav li a {
-      margin-right: 10px !important;
+      margin-right: 12px !important;
       font-size: small !important;
     }
     nav ul{
       padding:0px !important;
+      text-align: center;
+    }
+    .experience-item{
+      width: 100%;
+    }
+    .maxco-img {
+      position: relative;
+      right: 45px;
+      margin: 0 20px 20px 20px;
+    }
+    .tap-img {
+      padding: 20px !important;
+      margin: 10px 10px;
     }
     .contact {
         padding: 0px;
