@@ -66,6 +66,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="view-resume-div">
+                        <a class="view-resume" href="/assets/cv/VISHNU PONOLI CV.pdf" target="_blank">
+                            View Resume
+                            
+                        </a>
+                    </div>
 
                 </section>
                 <section class="even-section">
@@ -303,23 +309,31 @@
                     </div>
 
                  </section>
+                 <section class="resume-section odd-section">
+                    <div class="resume">
+                        <a class="download-resume" href="/assets/cv/VISHNU PONOLI CV.pdf" download>
+                            Download Resume
+                            <i class="fa-solid fa-circle-arrow-down fa-sm my-element" style="color: #c07524;"></i>
+                        </a>
+                    </div>
+                 </section>
                  <section class="section-wrapper odd-section" id="c-form">
                                                                         <!-- Form Section -->
                     <p id="status"></p>
                     <form id="myform" action="">
                           <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="fullname" placeholder="full-name">
+                            <label for="exampleFormControlInput1" class="form-label" >Name</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="full-name" minlength="3" maxlength="20">
                             <p id="f-name-req"></p>
                           </div>
                           <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="eaddress" placeholder="name@example.com">
+                            <label for="exampleFormControlInput1" class="form-label" >Email address</label>
+                            <input type="email" class="form-control" id="eaddress" placeholder="name@example.com" valid minlength="5" maxlength="20">
                             <p id="e-req"></p>
                           </div>
                           <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Leave a Message</label>
-                            <textarea class="form-control" id="msg" rows="3"></textarea>
+                            <textarea class="form-control" id="msg" rows="3" minlength="5" maxlength="500"></textarea>
                             <p id="msg-req"></p>
                           </div>
                           <div class="button-container">

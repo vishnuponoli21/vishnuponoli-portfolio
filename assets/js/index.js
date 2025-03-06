@@ -17,6 +17,20 @@ var fnamereq = retrunId('f-name-req')
 var emailreq = retrunId('e-req')
 var msgreq = retrunId('msg-req')
 
+var firstname = "";
+var emailadress = "";
+var textm = "";
+fname.addEventListener('keydown',(event)=>{
+     firstname = event.target.value ;
+})
+email.addEventListener('keydown',(event)=>{
+    emailadress = event.target.value ;
+})
+message.addEventListener('keydown',(event)=>{
+    textm = event.target.value ;
+})
+
+
                                                                             // the action on button click
 button.addEventListener('click', (event) => {
     event.preventDefault();                                                 //to prevent the default action of the form
@@ -52,25 +66,42 @@ button.addEventListener('click', (event) => {
         emailreq.innerHTML = `<span style="color:red">*</span>mail requierd`;
     }                                                               //text area
     if(fname.value != '' && email.value != ''){
-       let timer = setInterval(stats.textContent = "Form submited !!" ,5000);
+
+        localStorage.setItem('name',firstname);
+        localStorage.setItem('email',emailadress);
+        localStorage.setItem('text',textm);
+
+       let say = (stats.textContent = "Form submited !!");
+       let timer = setInterval(say,5000);
         console.log(timer);
         setTimeout(()=> {
                 clearInterval(timer);
                 stats.textContent = "";
-                fname.value = '';
-                email.value = '';
-                message.value = '';
+                // fname.value = '';
+                // email.value = '';
+                // message.value = '';
 
             },5000)
-
-        // let timer1 = setInterval( stats.innerHTML = `Form getting submited ...`, 3000);
-        // console.log(timer1)
-        // let timer2 = setInterval( stats.textContent = "Form submited !!", 3000);
-        // console.log(timer2)
-        // setTimeout(()=> {
-        //     clearInterval(timer);
-        //     stats.textContent = "";
-        //     alert("over");
-        // },5000)
     }
 })
+
+fname.addEventListener('keydown',(event)=>{
+    fname = event.target.value ;
+})
+
+
+
+var submitmsg = ["form is being submited ...","form submited !!"]
+
+var i = 0 ;
+var count=0;
+setInterval(()=>{
+count=+1;
+},1000)
+
+
+for(i;i<submitmsg.length;i++){
+    if(i==0){
+        stats.textContent =""
+    }
+}

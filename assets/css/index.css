@@ -157,6 +157,18 @@ header{
     font-style: "roboto-mainhead";
   }
 
+                                                   /* Introduction Section */
+   .view-resume-div{
+   
+    margin-left: 12px;
+    margin-top: 5px;
+   }
+   .view-resume {
+    text-decoration: none;
+    color: #c07524;
+  }
+ 
+
                                                    /* Navigation-Bar*/
   nav{
     padding-top: 10px;
@@ -247,6 +259,22 @@ header{
   .contact  ul li span {
     margin-left: 25px ;
   }
+                                                    /* Resume section */
+  .download-resume{
+    text-decoration: none;
+    color: #c07524;
+  }
+  .resume-section {
+    padding: 20px 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .resume {
+    padding :2px 5px 2px 10px;
+    border:2px solid #c07524;
+    border-radius: 23px;
+  }
+
 
                                                     /* Form Section */
   #c-form p:first-child {
@@ -309,4 +337,13 @@ header{
         margin-left:3px;
        flex-wrap: wrap;
     }
+  }
+
+                                                          /* Animations */
+  .my-element {
+    display: inline-block;
+    margin: 0 2px;
+  
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
   }
